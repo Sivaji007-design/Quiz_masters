@@ -1,0 +1,13 @@
+
+[
+  {
+    "question": "What is Python?",
+    "options": ["Snake", "Programming Language", "Car", "Game"],
+    "answer": 1
+  },
+  {
+    "question": "Which keyword is used to define a class?",
+    "options": ["function", "define", "class", "struct"],
+    "answer": 2
+  }
+]

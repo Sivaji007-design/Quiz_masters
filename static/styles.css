@@ -1,0 +1,163 @@
+/* Enhanced General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f4f4f9, #e0e0e0);
+    color: #333;
+    line-height: 1.6;
+    transition: background-color 0.3s ease;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(90deg, #4CAF50, #81C784);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-out;
+}
+
+/* Links */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+a:hover {
+    color: #2e7d32;
+    text-decoration: underline;
+}
+
+/* List Styles */
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+li {
+    margin: 10px;
+    padding: 10px 20px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+li:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-5px);
+}
+
+/* Button Styles */
+button {
+    background: linear-gradient(90deg, #4CAF50, #81C784);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+    background-color: #3e8e41;
+}
+
+/* Form Styles */
+form {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="radio"]:focus {
+    outline: 2px solid #4CAF50;
+    outline-offset: 2px;
+}
+
+/* Result Page Styles */
+.result {
+    text-align: center;
+    margin-top: 30px;
+    animation: fadeIn 1s ease-in;
+}
+
+.result p {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.result a {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: linear-gradient(90deg, #4CAF50, #81C784);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.result a:hover {
+    background: #45a049;
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
